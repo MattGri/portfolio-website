@@ -7,6 +7,7 @@ const Home = () => {
     document.title = 'Home';
   }, []);
 
+
   return (
     <motion.div
       initial={{
@@ -40,9 +41,6 @@ const Home = () => {
             },
             gap: '20px',
             m: '165px auto 20px',
-           
-
-            // textAlign: 'center',
           }}
         >
           <Typography

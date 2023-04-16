@@ -9,6 +9,12 @@
 .activeLink {
   text-decoration: none;
   color: #bfcacc;
+  transition: 0.5s;
+}
+
+.activeLink:hover {
+  color: #fff;
+  transition: 0.5s;
 }
 
 .active {

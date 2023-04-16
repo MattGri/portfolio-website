@@ -7,9 +7,7 @@ import {
 } from '@mui/material';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import photosnap from '../assets/photosnap.png';
-import countries from '../assets/countries.png';
-import weather from '../assets/weather.png';
+import { imageListItems } from '../data/projectItems';
 
 const Projects = () => {
   useEffect(() => {
@@ -48,85 +46,47 @@ const Projects = () => {
             display: 'flex',
             flexWrap: 'wrap',
             justifyContent: 'space-around',
+            overflow: 'hidden',
           }}
           cols={3}
         >
-          <Link
-            to="https://thunderous-florentine-0c5cb2.netlify.app/"
-            target="_blank"
-            style={{
-              textDecoration: 'none',
-            }}
-          >
-            <ImageListItem>
-              <img
-                src={photosnap}
-                alt="Photosnap website"
+          {imageListItems.map(({ link, imageSrc, altText, title }) => (
+            <motion.div
+              whileHover={{
+                scale: 1.1,
+                transition: {
+                  duration: 0.5,
+                },
+              }}
+            >
+              <Link
+                to={link}
+                target="_blank"
                 style={{
-                  width: '300px',
+                  textDecoration: 'none',
                 }}
-              />
-              <ImageListItemBar
-                title="Photography website"
-                position="below"
-                sx={{
-                  color: 'primary.main',
-                  marginTop: '10px',
-                  textAlign: 'center',
-                }}
-              />
-            </ImageListItem>
-          </Link>
-          <Link
-            to="https://tiny-starship-51b4a5.netlify.app/"
-            target="_blank"
-            style={{
-              textDecoration: 'none',
-            }}
-          >
-            <ImageListItem>
-              <img
-                src={countries}
-                alt="Countries App"
-                style={{
-                  width: '300px',
-                }}
-              />
-              <ImageListItemBar
-                title="Countries App"
-                position="below"
-                sx={{
-                  color: 'primary.main',
-                  textAlign: 'center',
-                  marginTop: '10px',
-                }}
-              />
-            </ImageListItem>
-          </Link>
-
-          <Link
-            to="https://bright-strudel-e60cdd.netlify.app/"
-            target="_blank"
-            style={{ textDecoration: 'none' }}
-          >
-            <ImageListItem>
-              <img
-                src={weather}
-                alt="Weather App"
-                style={{
-                  width: '300px',
-                }}
-              />
-              <ImageListItemBar
-                title="Weather App"
-                position="below"
-                sx={{
-                  color: 'primary.main',
-                  textAlign: 'center',
-                }}
-              />
-            </ImageListItem>
-          </Link>
+              >
+                <ImageListItem>
+                  <img
+                    src={imageSrc}
+                    alt={altText}
+                    style={{
+                      width: '300px',
+                    }}
+                  />
+                  <ImageListItemBar
+                    title={title}
+                    position="below"
+                    sx={{
+                      color: 'primary.main',
+                      marginTop: '10px',
+                      textAlign: 'center',
+                    }}
+                  />
+                </ImageListItem>
+              </Link>
+            </motion.div>
+          ))}
         </ImageList>
       </motion.div>
     </>

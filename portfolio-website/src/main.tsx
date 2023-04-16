@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom/client';
 import App from './App';
 import './index.css';
 import { ThemeProvider, createTheme, Palette } from '@mui/material/styles';
-import { BrowserRouter as Router } from 'react-router-dom';
 
 declare module '@mui/material/styles' {
   interface Palette {
@@ -46,11 +45,7 @@ const theme = createTheme({
 });
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
-  <React.StrictMode>
-    <ThemeProvider theme={theme}>
-      <Router>
-        <App />
-      </Router>
-    </ThemeProvider>
-  </React.StrictMode>
+  <ThemeProvider theme={theme}>
+    <App />
+  </ThemeProvider>
 );

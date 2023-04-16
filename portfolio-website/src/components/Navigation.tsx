@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import { Container, Box, Typography } from '@mui/material';
+import { Box, Typography, Container } from '@mui/material';
 import { Menu, Clear } from '@mui/icons-material';
+import MenuLinks from './MenuLinks';
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -24,17 +25,15 @@ const Navigation = () => {
           },
           alignItems: 'center',
           justifyContent: 'space-between',
-          mt: '35px',
+          pt: '35px',
         }}
       >
-        <Box>
-          <Typography
-            variant="h5"
-            component="h1"
-            sx={{
-              color: 'primary.main',
-            }}
-          >
+        <Box
+          sx={{
+            color: 'primary.main',
+          }}
+        >
+          <Typography variant="h5" component="h1">
             Mateusz Grzybowski
           </Typography>
         </Box>
@@ -99,40 +98,7 @@ const Navigation = () => {
                 }}
                 onClick={handleMenuOpen}
               />
-              <Box
-                sx={{
-                  position: 'absolute',
-                  top: '50%',
-                  left: '50%',
-                  transform: 'translate(-50%, -50%)',
-                  display: 'flex',
-                  flexDirection: 'column',
-                  alignItems: 'center',
-                  gap: '20px',
-                }}
-              >
-                <NavLink
-                  to="/"
-                  className="activeLink"
-                  onClick={handleMenuClose}
-                >
-                  Home
-                </NavLink>
-                <NavLink
-                  to="/projects"
-                  className="activeLink"
-                  onClick={handleMenuClose}
-                >
-                  Projects
-                </NavLink>
-                <NavLink
-                  to="/contact"
-                  className="activeLink"
-                  onClick={handleMenuClose}
-                >
-                  Contact
-                </NavLink>
-              </Box>
+              <MenuLinks onClose={handleMenuClose} />
             </Box>
           )}
         </Box>
