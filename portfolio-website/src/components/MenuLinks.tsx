@@ -3,11 +3,7 @@ import { NavLink } from 'react-router-dom';
 import { Box } from '@mui/material';
 import { Close } from '@mui/icons-material';
 
-interface MenuLinksProps {
-  onClose: () => void;
-}
-
-const MenuLinks = ({ onClose }: MenuLinksProps) => {
+const MenuLinks = () => {
   return (
     <Box
       sx={{
@@ -21,13 +17,13 @@ const MenuLinks = ({ onClose }: MenuLinksProps) => {
         gap: '20px',
       }}
     >
-      <NavLink to="/" className="activeLink" onClick={onClose}>
+      <NavLink to="/" className="activeLink">
         Home
       </NavLink>
-      <NavLink to="/projects" className="activeLink" onClick={onClose}>
+      <NavLink to="/projects" className="activeLink">
         Projects
       </NavLink>
-      <NavLink to="/contact" className="activeLink" onClick={onClose}>
+      <NavLink to="/contact" className="activeLink">
         Contact
       </NavLink>
     </Box>

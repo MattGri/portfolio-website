@@ -11,9 +11,6 @@ const Navigation = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  const handleMenuClose = () => {
-    setIsMenuOpen(false);
-  };
 
   return (
     <>
@@ -98,7 +95,7 @@ const Navigation = () => {
                 }}
                 onClick={handleMenuOpen}
               />
-              <MenuLinks onClose={handleMenuClose} />
+              <MenuLinks />
             </Box>
           )}
         </Box>
