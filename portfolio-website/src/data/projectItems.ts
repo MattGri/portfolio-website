@@ -1,6 +1,7 @@
 import photosnap from '../assets/photosnap.png';
 import countries from '../assets/countries.png';
 import weather from '../assets/weather.png';
+import speech from '../assets/speech-recognition.png';
 
 export const imageListItems = [
   {
@@ -20,5 +21,11 @@ export const imageListItems = [
     imageSrc: weather,
     altText: 'Weather App',
     title: 'Weather App',
+  },
+  {
+    link: 'https://main--melodic-croquembouche-766881.netlify.app/',
+    imageSrc: speech,
+    altText: 'Speech Recognition',
+    title: 'Speech Recognition',
   },
 ];
