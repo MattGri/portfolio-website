@@ -28,5 +28,5 @@ If you have any issues, please let me know on mateusz.grzybowski98@gmail.com
 
 # Live 📍
 
-You can visit website here: [https://www.mg-portfolio.pl/](https://spectacular-dasik-e0e9be.netlify.app/)https://spectacular-dasik-e0e9be.netlify.app/
+You can visit website here: https://spectacular-dasik-e0e9be.netlify.app/
 
