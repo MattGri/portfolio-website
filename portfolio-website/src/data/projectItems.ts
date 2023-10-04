@@ -17,12 +17,6 @@ export const imageListItems = [
     title: 'Countries App',
   },
   {
-    link: 'https://weather-app-project-portfolio.netlify.app/',
-    imageSrc: weather,
-    altText: 'Weather App',
-    title: 'Weather App',
-  },
-  {
     link: 'https://main--melodic-croquembouche-766881.netlify.app/',
     imageSrc: speech,
     altText: 'Speech Recognition',
