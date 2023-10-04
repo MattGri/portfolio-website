@@ -17,7 +17,7 @@ export const imageListItems = [
     title: 'Countries App',
   },
   {
-    link: 'https://bright-strudel-e60cdd.netlify.app/',
+    link: 'https://weather-app-project-portfolio.netlify.app/',
     imageSrc: weather,
     altText: 'Weather App',
     title: 'Weather App',
