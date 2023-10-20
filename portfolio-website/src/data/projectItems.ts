@@ -5,19 +5,19 @@ import speech from '../assets/speech-recognition.png';
 
 export const imageListItems = [
   {
-    link: 'https://thunderous-florentine-0c5cb2.netlify.app/',
+    link: 'https://photosnap-website-project.netlify.app/',
     imageSrc: photosnap,
     altText: 'Photosnap website',
     title: 'Photography website',
   },
   {
-    link: 'https://tiny-starship-51b4a5.netlify.app/',
+    link: 'https://countries-app-project.netlify.app/',
     imageSrc: countries,
     altText: 'Countries App',
     title: 'Countries App',
   },
   {
-    link: 'https://main--melodic-croquembouche-766881.netlify.app/',
+    link: 'https://speech-recognition-app-project.netlify.app/',
     imageSrc: speech,
     altText: 'Speech Recognition',
     title: 'Speech Recognition',
