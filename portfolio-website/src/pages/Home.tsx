@@ -1,12 +1,12 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import { Typography, Box } from '@mui/material';
 import { motion } from 'framer-motion';
+import { LuGithub } from 'react-icons/lu';
 
 const Home = () => {
   useEffect(() => {
     document.title = 'Home';
   }, []);
-
 
   return (
     <motion.div
@@ -81,32 +81,45 @@ const Home = () => {
             gap: '10px',
           }}
         >
-          <Typography
-            variant="h4"
-            component="h1"
+          <Box
             sx={{
-              color: 'custom.main',
-              fontSize: {
-                xs: '20px',
-                sm: '25px',
-              },
+              display: 'flex',
+              alignItems: 'center',
+              gap: '10px',
             }}
           >
-            Junior
-          </Typography>
-          <Typography
-            variant="h4"
-            component="h1"
-            sx={{
-              color: 'primary.main',
-              fontSize: {
-                xs: '20px',
-                sm: '25px',
-              },
-            }}
-          >
-            Frontend Developer
-          </Typography>
+            <Typography
+              variant="h4"
+              component="h1"
+              sx={{
+                color: 'custom.main',
+                fontSize: {
+                  xs: '20px',
+                  sm: '25px',
+                },
+              }}
+            >
+              Junior
+            </Typography>
+            <Typography
+              variant="h4"
+              component="h1"
+              sx={{
+                color: 'primary.main',
+                fontSize: {
+                  xs: '20px',
+                  sm: '25px',
+                },
+              }}
+            >
+              Frontend Developer
+            </Typography>
+            <a href="https://github.com/MattGri" target="_blank">
+              <LuGithub
+                className="githubLink"
+              />
+            </a>
+          </Box>
         </Box>
       </Box>
     </motion.div>
