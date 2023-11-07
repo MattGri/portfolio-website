@@ -2,6 +2,7 @@ import photosnap from '../assets/photosnap.png';
 import countries from '../assets/countries.png';
 import weather from '../assets/weather.png';
 import speech from '../assets/speech-recognition.png';
+import blog from '../assets/blog.png';
 
 export const imageListItems = [
   {
@@ -21,5 +22,11 @@ export const imageListItems = [
     imageSrc: speech,
     altText: 'Speech Recognition',
     title: 'Speech Recognition',
+  },
+  {
+    link: 'https://blog-website-project-app.netlify.app/',
+    imageSrc: blog,
+    altText: 'Blog Website',
+    title: 'Blog Website',
   },
 ];

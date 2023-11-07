@@ -71,7 +71,8 @@ const Projects = () => {
                     src={imageSrc}
                     alt={altText}
                     style={{
-                      width: '300px',
+                      width: '250px',
+                      height: '200px',
                     }}
                   />
                   <ImageListItemBar
