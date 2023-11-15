@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { Typography, Box } from '@mui/material';
 import { motion } from 'framer-motion';
 import { LuGithub } from 'react-icons/lu';
+import { CiLinkedin } from 'react-icons/ci';
 
 const Home = () => {
   useEffect(() => {
@@ -54,20 +55,7 @@ const Home = () => {
               },
             }}
           >
-            Mateusz
-          </Typography>
-          <Typography
-            variant="h2"
-            component="h2"
-            sx={{
-              color: 'custom.main',
-              fontSize: {
-                xs: '30px',
-                sm: '50px',
-              },
-            }}
-          >
-            Grzybowski
+            Front-End React Developer
           </Typography>
         </Box>
         <Box
@@ -92,32 +80,23 @@ const Home = () => {
               variant="h4"
               component="h1"
               sx={{
-                color: 'custom.main',
-                fontSize: {
-                  xs: '20px',
-                  sm: '25px',
-                },
-              }}
-            >
-              Junior
-            </Typography>
-            <Typography
-              variant="h4"
-              component="h1"
-              sx={{
                 color: 'primary.main',
                 fontSize: {
                   xs: '20px',
-                  sm: '25px',
+                  sm: '23px',
                 },
               }}
             >
-              Frontend Developer
+              Hi, I'm Mateusz Grzybowski.
             </Typography>
+            <a
+              href="https://www.linkedin.com/in/mateusz-grzybowski-1685a5183/"
+              target="_blank"
+            >
+              <CiLinkedin className="redirectLink" />
+            </a>
             <a href="https://github.com/MattGri" target="_blank">
-              <LuGithub
-                className="githubLink"
-              />
+              <LuGithub className="redirectLink" />
             </a>
           </Box>
         </Box>

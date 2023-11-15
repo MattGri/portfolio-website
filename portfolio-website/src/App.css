@@ -21,7 +21,7 @@
   color: #fff;
 }
 
-.githubLink {
+.redirectLink {
   color: #fff;
   cursor: pointer;
   font-size: 20px;
@@ -29,7 +29,7 @@
   transition: 0.5s;
 }
 
-.githubLink:hover {
+.redirectLink:hover {
   transition: 0.5s;
   color: #fdce72;
 }
