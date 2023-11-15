@@ -55,7 +55,16 @@ const Home = () => {
               },
             }}
           >
-            Front-End React Developer
+            Front-End
+            <span
+              style={{
+                color: '#fdce72',
+              }}
+            >
+              {' '}
+              React{' '}
+            </span>
+            Developer
           </Typography>
         </Box>
         <Box
@@ -74,6 +83,10 @@ const Home = () => {
               display: 'flex',
               alignItems: 'center',
               gap: '10px',
+              flexDirection: {
+                xs: 'column',
+                sm: 'row',
+              },
             }}
           >
             <Typography
@@ -87,17 +100,27 @@ const Home = () => {
                 },
               }}
             >
-              Hi, I'm Mateusz Grzybowski.
+              Hi, I'm Mateusz{' '}
+              <span
+                style={{
+                  color: '#fdce72',
+                }}
+              >
+                Grzybowski
+              </span>
+              .
             </Typography>
-            <a
-              href="https://www.linkedin.com/in/mateusz-grzybowski-1685a5183/"
-              target="_blank"
-            >
-              <CiLinkedin className="redirectLink" />
-            </a>
-            <a href="https://github.com/MattGri" target="_blank">
-              <LuGithub className="redirectLink" />
-            </a>
+            <Box>
+              <a
+                href="https://www.linkedin.com/in/mateusz-grzybowski-1685a5183/"
+                target="_blank"
+              >
+                <CiLinkedin className="redirectLink" />
+              </a>
+              <a href="https://github.com/MattGri" target="_blank">
+                <LuGithub className="redirectLink" />
+              </a>
+            </Box>
           </Box>
         </Box>
       </Box>
