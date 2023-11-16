@@ -1,18 +1,18 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import {
   Typography,
   ImageList,
-  ImageListItem,
-  ImageListItemBar,
 } from '@mui/material';
 import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
-import { imageListItems } from '../data/projectItems';
+import { useTranslation } from 'react-i18next';
+import ProjectItems from '../data/projectItems';
 
 const Projects = () => {
   useEffect(() => {
     document.title = 'Projects';
   }, []);
+
+  const { t } = useTranslation();
 
   return (
     <>
@@ -38,7 +38,7 @@ const Projects = () => {
             },
           }}
         >
-          Projects
+          {t('Projects')}
         </Typography>
 
         <ImageList
@@ -50,44 +50,7 @@ const Projects = () => {
           }}
           cols={3}
         >
-          {imageListItems.map(({ link, imageSrc, altText, title }) => (
-            <motion.div
-              whileHover={{
-                scale: 1.1,
-                transition: {
-                  duration: 0.5,
-                },
-              }}
-            >
-              <Link
-                to={link}
-                target="_blank"
-                style={{
-                  textDecoration: 'none',
-                }}
-              >
-                <ImageListItem>
-                  <img
-                    src={imageSrc}
-                    alt={altText}
-                    style={{
-                      width: '250px',
-                      height: '200px',
-                    }}
-                  />
-                  <ImageListItemBar
-                    title={title}
-                    position="below"
-                    sx={{
-                      color: 'primary.main',
-                      marginTop: '10px',
-                      textAlign: 'center',
-                    }}
-                  />
-                </ImageListItem>
-              </Link>
-            </motion.div>
-          ))}
+          <ProjectItems />
         </ImageList>
       </motion.div>
     </>

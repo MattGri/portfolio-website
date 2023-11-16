@@ -34,3 +34,13 @@
   transition: 0.5s;
   color: #fdce72;
 }
+
+.flag {
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.flag:hover {
+  transition: 0.5s;
+  transform: scale(1.1);
+}

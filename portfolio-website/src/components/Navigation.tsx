@@ -1,8 +1,11 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import { Box, Typography, Container } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 import { Menu, Clear } from '@mui/icons-material';
 import MenuLinks from './MenuLinks';
+import Flag from 'react-flagkit';
+import { useTranslation } from 'react-i18next';
+import i18n from '../i18n';
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,6 +14,7 @@ const Navigation = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const { t } = useTranslation();
 
   return (
     <>
@@ -42,14 +46,30 @@ const Navigation = () => {
           }}
         >
           <NavLink to="/" className="activeLink">
-            Home
+            {t('Home')}
           </NavLink>
           <NavLink to="/projects" className="activeLink">
-            Projects
+            {t('Projects')}
           </NavLink>
           <NavLink to="/contact" className="activeLink">
-            Contact
+            {t('Contact')}
           </NavLink>
+          <Flag
+            country="PL"
+            size={25}
+            className="flag"
+            onClick={() => {
+              i18n.changeLanguage('pl');
+            }}
+          />
+          <Flag
+            country="GB"
+            size={25}
+            className="flag"
+            onClick={() => {
+              i18n.changeLanguage('en');
+            }}
+          />
         </Box>
       </Box>
       <Box
@@ -80,7 +100,6 @@ const Navigation = () => {
                 left: '0',
                 width: '100%',
                 height: '100%',
-                backgroundColor: 'rgba(0, 0, 0, 0.5)',
                 zIndex: '100',
               }}
             >

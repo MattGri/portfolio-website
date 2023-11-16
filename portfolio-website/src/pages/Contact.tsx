@@ -1,11 +1,14 @@
 import { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Typography } from '@mui/material';
+import { useTranslation } from 'react-i18next';
 
 const Contact = () => {
   useEffect(() => {
     document.title = 'Contact';
   }, []);
+
+  const { t } = useTranslation();
 
   return (
     <motion.div
@@ -34,7 +37,7 @@ const Contact = () => {
           },
         }}
       >
-        Contact
+        {t('Contact')}
       </Typography>
       <Typography
         variant="h5"
@@ -48,7 +51,7 @@ const Contact = () => {
           },
         }}
       >
-        If you want to chat about a project - email me on
+        {t('ContactInfo')}
         <a
           href="mailto:mateusz.grzybowski98@gmail.com"
           style={{

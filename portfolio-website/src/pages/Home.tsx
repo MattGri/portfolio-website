@@ -3,11 +3,14 @@ import { Typography, Box } from '@mui/material';
 import { motion } from 'framer-motion';
 import { LuGithub } from 'react-icons/lu';
 import { CiLinkedin } from 'react-icons/ci';
+import { useTranslation } from 'react-i18next';
 
 const Home = () => {
   useEffect(() => {
     document.title = 'Home';
   }, []);
+
+  const { t } = useTranslation();
 
   return (
     <motion.div
@@ -100,7 +103,7 @@ const Home = () => {
                 },
               }}
             >
-              Hi, I'm Mateusz{' '}
+              {t('HomeInfo')}{' '}
               <span
                 style={{
                   color: '#fdce72',
