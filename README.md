@@ -15,10 +15,11 @@ Portfolio website
 `npm install && npm start`
 
 # Screenshots 📺
-![image](https://github.com/MattGri/portfolio-website/assets/61913031/7f21e87d-da86-4528-9678-3325b6f03b21)
-![image](https://github.com/MattGri/portfolio-website/assets/61913031/11c7b810-4c76-4e68-b874-6d0233116534)
-![image](https://user-images.githubusercontent.com/61913031/232426714-9585b0f8-f2d5-4528-bbfc-0e4ef8930ba4.png)
-![image](https://github.com/MattGri/portfolio-website/assets/61913031/639aed5b-622f-4252-8f31-7ed55c0ca7d9)
+![image](https://github.com/MattGri/portfolio-website/assets/61913031/29a87f8d-56ee-4484-9cfb-fd475f12efed)
+![image](https://github.com/MattGri/portfolio-website/assets/61913031/21f3c143-787c-4c29-b84a-cd33670a954c)
+![image](https://github.com/MattGri/portfolio-website/assets/61913031/48390274-02be-4508-87b3-53220d3c2bfa)
+![image](https://github.com/MattGri/portfolio-website/assets/61913031/30a248fb-95a5-433a-92dd-b0ac2596e352)
+![image](https://github.com/MattGri/portfolio-website/assets/61913031/2efa26f7-7ce8-4695-8ca5-c9fb4beadf8c)
 
 # Issues 🔍
 
