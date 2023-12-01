@@ -10,9 +10,10 @@ Portfolio website
 
 # Installation 💾
 
-`git clone https://github.com/MattGri/portfolio-website.git`
-
-`npm install && npm start`
+1. Clone the repository `git clone https://github.com/MattGri/portfolio-website.git`
+2. Change directory `portfolio-website`
+3. Install dependencies `npm install`
+4. At the terminal run the command `npm run dev`
 
 # Screenshots 📺
 ![image](https://github.com/MattGri/portfolio-website/assets/61913031/29a87f8d-56ee-4484-9cfb-fd475f12efed)
